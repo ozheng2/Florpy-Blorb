@@ -154,7 +154,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerScore: 0
   scoreText: {fileID: 584607292}
-  gameOverScreen: {fileID: 0}
+  gameOverScreen: {fileID: 2041664511}
 --- !u!4 &423468603
 Transform:
   m_ObjectHideFlags: 0
@@ -645,7 +645,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1500590213}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 423468602}
+        m_TargetAssemblyTypeName: LogicScript, Assembly-CSharp
+        m_MethodName: restartGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1500590213
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -851,7 +863,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2041664512
 RectTransform:
   m_ObjectHideFlags: 0
@@ -966,6 +978,14 @@ PrefabInstance:
     - target: {fileID: 4058506085587776642, guid: ec7dac8df4966b64bb5a02a543c49352, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4058506085587776643, guid: ec7dac8df4966b64bb5a02a543c49352, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4058506085587776647, guid: ec7dac8df4966b64bb5a02a543c49352, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4058506085587776668, guid: ec7dac8df4966b64bb5a02a543c49352, type: 3}
       propertyPath: m_Name
