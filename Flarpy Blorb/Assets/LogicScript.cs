@@ -9,11 +9,14 @@ public class LogicScript : MonoBehaviour
     public int playerScore;
     public Text scoreText;
     public GameObject gameOverScreen;
-
     public BirdScript bird;
+    public bool birdIsAlive;
     [ContextMenu("Increase Score")]
+    void Start(){
+        birdIsAlive = true;
+    }
     public void addScore(int scoreToAdd){
-        if(bird.birdIsAlive){
+        if(birdIsAlive){
             playerScore = playerScore + scoreToAdd;
         }
         scoreText.text = playerScore.ToString();
