@@ -48,3 +48,4 @@ MonoBehaviour:
   scoreText: {fileID: 0}
   gameOverScreen: {fileID: 0}
   bird: {fileID: 0}
+  birdIsAlive: 1

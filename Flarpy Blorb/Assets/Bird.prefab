@@ -138,3 +138,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myRigidBody: {fileID: 4058506085587776641}
   flapStrength: 20
+  logic: {fileID: 0}
